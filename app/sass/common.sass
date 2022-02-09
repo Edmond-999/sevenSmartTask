@@ -1,2 +1,38 @@
+@import "colors.sass"
+
 body
     font-family: 'Roboto', sans-serif
+
+.container
+    width: 95%
+    max-width: 1640px
+    margin: 0 auto
+
+img
+    width: 100%
+    height: auto
+
+.figure
+    position: relative
+    width: 100%
+
+.btn
+    display: inline-block
+    &.green
+        background-color: $green
+        color: $white
+        text-align: center
+        min-width: 200px
+        font-size: 16px
+        padding: 13px 66px
+        border-radius: 28px 28px 0 28px
+        &:hover, &:active
+            opacity: .8
+    &.white
+        background-color: transparent
+        color: $green50
+        border-radius: 6px
+        border: 1px solid $green
+        padding: 19px 57px
+        text-align: center
+        min-width: 256px
