@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Home</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/app.min.css" />
@@ -17,7 +17,7 @@
 
   <body>
     <main>
-        <header class="header">
+      <header class="header">
         <div class="container">
           <div class="page-title">
             <h1 class="title fz36 fw500 c-black">Blog Center</h1>
@@ -28,8 +28,17 @@
         </div>
         <nav class="header-nav bg-white50">
           <div class="container">
-            <button class="btn-all fz16 c-green">All</button>
-            <ul class="nav-ul opened">
+            <button class="burger">
+              <div class="lines bg-green">
+                <div class="line"></div>
+                <div class="line middle"></div>
+                <div class="line"></div>
+              </div>
+            </button>
+            <ul class="nav-ul">
+              <li class="nav-li">
+                <a href="#" class="nav-link fz16 c-black active">All</a>
+              </li>
               <li class="nav-li">
                 <a href="#" class="nav-link fz16 c-black">Training</a>
               </li>
@@ -48,17 +57,18 @@
               <li class="nav-li">
                 <a href="#" class="nav-link fz16 c-black">L&D</a>
               </li>
-              <button class="search-btn">
+              <button class="search-btn" aria-label="search">
                 <img
                   src="./images/src/search-icon.svg"
-                  alt="search-icon"
+                  alt="search"
                   class="search-icon"
                 />
               </button>
             </ul>
-            <a href="#" class="btn green">Free Trial</a>
-          </nav>
-      </header> 
+            <a href="#" target="blank" class="btn green">Free Trial</a>
+          </div>
+        </nav>
+      </header>
       <section class="article">
         <div class="container">
           <h3 class="title fz36 c-black fw300">Articles</h3>
@@ -82,13 +92,13 @@
                   <h4 class="subtitle fz16 fw500 c-black">
                     What OSHA Dental Training is Annual?
                   </h4>
-                  <p class="time fz16 c-gray">Date: 08/26/21</p>
+                  <time class="time fz16 c-gray">Date: 08/26/21</time>
                   <p class="descr fz16 c-gray">CATEGORY I 4 MIN READ</p>
                   <a href="#" class="read-more-btn fz16 c-black"
                     >Read More
                     <img
                       src="./images/src/arrow-right.svg"
-                      alt="arrow-right"
+                      alt="arrow right"
                       class="arrow-right"
                     />
                   </a>
@@ -111,14 +121,15 @@
                   </div>
                   <p class="subtitle fz16 fw500 c-black">
                     Questions to ask before selecting your new Learning…
+                    Management System (LMS)
                   </p>
-                  <p class="time fz16 c-gray">Date: 08/26/21</p>
+                  <time class="time fz16 c-gray">Date: 08/26/21</time>
                   <p class="descr fz16 c-gray">CATEGORY I 4 MIN READ</p>
                   <a href="#" class="read-more-btn fz16 c-black"
                     >Read More
                     <img
                       src="./images/src/arrow-right.svg"
-                      alt="arrow-right"
+                      alt="arrow right"
                       class="arrow-right"
                     />
                   </a>
@@ -142,35 +153,39 @@
                   <p class="subtitle fz16 fw500 c-black">
                     How to create successful training program
                   </p>
-                  <p class="time fz16 c-gray">Date: 08/26/21</p>
+                  <time class="fz16 c-gray">Date: 08/26/21</time>
                   <p class="descr fz16 c-gray">CATEGORY I 4 MIN READ</p>
                   <a href="#" class="read-more-btn fz16 c-black"
                     >Read More
                     <img
                       src="./images/src/arrow-right.svg"
-                      alt="arrow-right"
+                      alt="arrow right"
                       class="arrow-right"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <aside class="subscribe-card bg-green">
-              <p class="sub-title fz24 fw500 c-black tac">
+            <aside class="subscribe-card bg-white50">
+              <h5 class="sub-title fz24 fw500 c-black tac">
                 Subscribe to Our Blog
-              </p>
+              </h5>
               <p class="sub-descr fz16 c-black tac">
                 Get weekly updates on the newest compliance stories, case
                 studies and tips right in your mailbox.
               </p>
-              <a href="mailto:ani.hakobyan@buymie.eu" class="btn white sub-btn"
-                >Subscribe via Email</a
-              >
+              <a href="#" class="btn white sub-btn">Subscribe via Email</a>
               <div class="card-social">
                 <p class="social-title fz16 tac">Follow us</p>
                 <ul class="social-ul">
                   <li class="social-li">
-                    <a href="#" class="social-link">
+                    <a
+                      href="#"
+                      aria-label="Linkedin"
+                      target="blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                    >
                       <img
                         src="./images/src/linkedin.svg"
                         alt="linkedin"
@@ -179,7 +194,13 @@
                     </a>
                   </li>
                   <li class="social-li">
-                    <a href="#" class="social-link">
+                    <a
+                      href="#"
+                      aria-label="Facebook"
+                      target="blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                    >
                       <img
                         src="./images/src/facebook.svg"
                         alt="facebook"
@@ -188,7 +209,13 @@
                     </a>
                   </li>
                   <li class="social-li">
-                    <a href="#" class="social-link">
+                    <a
+                      href="#"
+                      aria-label="Twitter"
+                      target="blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                    >
                       <img
                         src="./images/src/twitter.svg"
                         alt="twitter"
@@ -197,7 +224,13 @@
                     </a>
                   </li>
                   <li class="social-li">
-                    <a href="#" class="social-link">
+                    <a
+                      href="#"
+                      aria-label="Instagram"
+                      target="blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                    >
                       <img
                         src="./images/src/instagram.svg"
                         alt="instagram"
@@ -206,7 +239,13 @@
                     </a>
                   </li>
                   <li class="social-li">
-                    <a href="#" class="social-link">
+                    <a
+                      href="#"
+                      aria-label="Youtube"
+                      target="blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                    >
                       <img
                         src="./images/src/youtube.svg"
                         alt="youtube"
@@ -221,5 +260,7 @@
         </div>
       </section>
     </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>
